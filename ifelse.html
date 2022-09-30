@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/js/bootstrap.js">
+
+</head>
+
+<body>
+    <div class="container ">
+        First Semster
+        <table class="table table-bordered" style="border: solid;">
+            <thead>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>C.H</th>
+                <th>Grade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="jmk"></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="jch"></td>
+                    <td><input type="text" class="form-control" id="jG"></td>
+                </tr>
+                <tr>
+                    <td>DLD</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="DLD1"></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="DLD2"></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="DLD3"></td>
+                </tr>
+                <tr>
+                    <td>F.. M..</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="FM1"></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="FM2"></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id="FM3"></td>
+                </tr>
+                <tr>
+                    <td>C.GPA</td>
+                    <td><input type="text" class="form-control" onchange="myjava1()" id="hamii"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container">
+        Second Semester
+        <table class="table table-bordered" style="border: solid;">
+            <thead>
+                <th>Subject</th>
+                <th>GPA</th>
+                <th>C.H</th>
+                <th>Grade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                </tr>
+                <tr>
+                    <td>DLD</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                </tr>
+                <tr>
+                    <td>F.. M..</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                </tr>
+                <tr>
+                    <td>C.GPA</td>
+                    <td><input type="text" class="form-control" onchange="myjava()" id=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    function myjava() {
+
+        var a = Number(document.getElementById("jmk").value);
+        var b = Number(document.getElementById("jch").value);
+        var c = a * b;
+        //    var d=c*4/100;
+        //    alert(d);
+        document.getElementById("jG").value = c;
+    }
+
+    function myjava() {
+
+        var a = Number(document.getElementById("DLD1").value);
+        var b = Number(document.getElementById("DLD2").value);
+        var c = a * b;
+        //    var d=c*4/100;
+        //    alert(d);
+        document.getElementById("DLD3").value = c;
+
+    }
+
+    function myjava() {
+
+        var a = Number(document.getElementById("FM1").value);
+        var b = Number(document.getElementById("FM2").value);
+        var c = a * b;
+        //    var d=c*4/100;
+        //    alert(d);
+        document.getElementById("FM3").value = c;
+
+
+    }
+
+    // function myjava1() {
+    //     h = jch + DLD2 + FM2;
+    //     r = jG + bDLD3 + FM3;
+    //     HR = h / r;
+    //     document.getElementById("hamii").value = HR;
+    // }
+</script>
